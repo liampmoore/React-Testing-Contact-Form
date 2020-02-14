@@ -16,6 +16,11 @@ test("Each form field renders to the DOM", () => {
     const firstName = getByLabelText("First Name*");
     const lastName = getByLabelText("Last Name*");
     const email = getByLabelText("Email*");
-    const message = getByLabelText("Message*");
+    const message = getByLabelText("Message");
+
+    expect(firstName).toBeInTheDocument()
+    expect(lastName).toBeInTheDocument()
+    expect(email).toBeInTheDocument()
+     expect(message).toBeInTheDocument()
 
 })
